@@ -14,7 +14,7 @@ const Agent = require('socks5-https-client/lib/Agent');
 const fetch = require("node-fetch");
 
 //connecting to telegram 
-telegram = new telegramBot(process.env.TOKEN_TELEGRAM,{
+telegram = new telegramBot(process.env.TELEGRAM_TOKEN,{
     polling: true, 
 
 });

@@ -7,14 +7,13 @@ const PORT = process.env.PORT || 4000;
 app.get('/', (req, res) => res.send('<h2> Hello World! </h2>'));
 app.listen(PORT, () => console.log(`app listening on port ${PORT}`));
 
-dotenv.config({path:'.env'});
 
 let telegramBot = require('node-telegram-bot-api');
 const Agent = require('socks5-https-client/lib/Agent');
 const fetch = require("node-fetch");
 
 //connecting to telegram 
-telegram = new telegramBot(process.env.TOKEN_TELEGRAM,{
+telegram = new telegramBot("899300765:AAHUwow_IswqMJqyVYHmTUAc1-_4gjGdCqo",{
     polling: true, 
 
 });
